@@ -1,0 +1,32 @@
+{% sw_extends '@Storefront/storefront/layout/header.html.twig' %}
+
+{% block base_header %}
+    <div class="base-header">
+        <div class="top-bar pt-2 pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col info-hide">+41 76 000 00 00</div>
+                    <div class="col text-center">Made in Switzerland</div>
+                    <div class="col info-hide text-end">SEO-ready Premium Theme</div>
+                </div>
+            </div>
+        </div>
+
+        <header class="header-main py-2">
+            {% block base_header_inner %}
+                <div class="container">
+                    {% sw_include '@Storefront/storefront/layout/header/header.html.twig' %}
+                </div>
+
+                <div class="nav-main">
+                    {% block base_navigation_inner %}
+                        {% sw_include '@Storefront/storefront/layout/navbar/navbar.html.twig' with { header: header } %}
+                    {% endblock %}
+                </div>
+            {% endblock %}
+        </header>
+    </div>
+{% endblock %}
+
+{% block base_navigation %}
+{% endblock %}

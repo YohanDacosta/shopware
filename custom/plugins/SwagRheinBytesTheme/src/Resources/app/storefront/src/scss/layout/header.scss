@@ -1,0 +1,41 @@
+.top-bar {
+  display: flex;
+  background: #1e2935;
+  font-size: 0.75rem;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+
+  .col {
+    display: flex;
+    align-items: center;
+  }
+
+  .text-center {
+    justify-content: center;
+  }
+
+  .text-end {
+    justify-content: flex-end;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 0.875rem;
+  }
+}
+
+.header-main {
+  background: #EBEBEB;
+}
+
+.header-row {
+  padding: 0;
+}
+
+.top-bar .info-hide {
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+}
