@@ -1,0 +1,45 @@
+/*
+Product box overrides
+==============================================
+Tightens the vertical spacing between the internal elements of the
+product card (image, name, price, action) shipped by the core theme.
+*/
+
+.product-box {
+    border-color: rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        transform: translateY(-4px);
+    }
+
+    .product-image-wrapper {
+        margin-bottom: 8px;
+    }
+
+    .product-rating {
+        margin-bottom: 6px;
+    }
+
+    .product-name {
+        margin-bottom: 6px;
+    }
+
+    .product-price-info {
+        margin-top: 4px;
+    }
+
+    .product-price {
+        margin-top: 4px;
+    }
+
+    .product-action {
+        margin-top: 10px;
+    }
+
+    .card-body {
+        --bs-card-spacer-y: 0.75rem;
+        --bs-card-spacer-x: 0.75rem;
+    }
+}

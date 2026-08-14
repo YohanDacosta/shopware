@@ -1,0 +1,10 @@
+{% sw_extends '@Storefront/storefront/component/product/card/box-standard.html.twig' %}
+
+{% block component_product_box_description %}
+    {% if product.translated.description %}
+        <p class="product-description mb-0">
+            {{ product.translated.description|striptags|raw }}
+        </p>
+    {% endif %}
+{% endblock %}
+{% block component_product_box_variant_characteristics %}{% endblock %}
